@@ -1,0 +1,15 @@
+{
+  "name": "dieterkoennes-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Statische High-End-Website fuer Dieter Koennes (Tailwind + GSAP)",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/main.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./assets/css/main.css --watch",
+    "serve": "php -S localhost:8347 -t ."
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}
