@@ -40,6 +40,32 @@
 </head>
 <body class="bg-ink text-paper">
 
+  <!-- C3: Preloader (Erstbesuch) -->
+  <div id="preloader" class="preloader">
+    <svg width="60" height="80" viewBox="0 0 60 80" fill="none">
+      <path class="pre-path" d="M30 78 L30 40 M30 52 C30 40 14 38 12 24 C26 26 32 36 30 50 M30 46 C30 36 44 32 48 20 C36 22 28 32 30 44"
+        stroke="#16a34a" stroke-width="2" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+
+  <!-- A2: Golden-Hour-Lichtfeld + Filmkorn -->
+  <div class="light-field" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- C2: Page-Transition-Wipe -->
+  <div class="page-wipe" aria-hidden="true"></div>
+
+  <!-- A1: Die wachsende Linie (spannt sich ueber die gesamte Seite) -->
+  <svg class="growth-line" viewBox="0 0 100 1000" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M50 0
+             C 48 60, 30 90, 32 150
+             C 34 210, 62 230, 60 300
+             C 58 370, 30 390, 33 460
+             C 36 530, 66 550, 62 630
+             C 58 710, 32 730, 36 800
+             C 40 870, 58 890, 50 1000" />
+  </svg>
+
   <!-- ===== NAV ===== -->
   <nav id="nav" class="site-nav">
     <div class="mx-auto flex w-full max-w-6xl items-center justify-between">
@@ -87,7 +113,10 @@
 
   <!-- ===== KAPITEL 2: WIRKUNG IN ZAHLEN ===== -->
   <section id="wirkung" class="relative overflow-hidden bg-ink px-6 py-28">
-    <div class="mx-auto max-w-6xl">
+    <div class="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden">
+      <span class="kinetic-ghost" data-kinetic="-0.3">WIRKUNG · WIRKUNG</span>
+    </div>
+    <div class="relative mx-auto max-w-6xl">
       <div class="reveal mb-16 text-center">
         <p class="mb-3 text-sm font-medium uppercase tracking-widest text-forest-mid">Wirkung mit Zahlen</p>
         <h2 class="mx-auto max-w-3xl" style="font-size:var(--text-display)">Ein Moderator, der Nachhaltigkeit lebt — und liefert.</h2>
@@ -150,8 +179,8 @@
   <!-- ===== KAPITEL 4: WARUM DAS IHR EVENT VERÄNDERT (mit BLOOM-Proof) ===== -->
   <section id="warum" class="px-6 py-28" style="background:#f5f3ee; color:var(--color-ink)">
     <div class="mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-2">
-      <div class="reveal overflow-hidden rounded-3xl shadow-2xl">
-        <img src="assets/img/bloom-stage-1920.webp" alt="Dieter Könnes als Nachhaltigkeits-Moderator live auf der Bühne beim BLOOM Zukunftsforum Mönchengladbach für Umwelt, Wandel und Visionen" class="h-full w-full object-cover" loading="lazy">
+      <div class="img-reveal rounded-3xl shadow-2xl">
+        <img src="assets/img/bloom-stage-1920.webp" alt="Dieter Könnes als Nachhaltigkeits-Moderator live auf der Bühne beim BLOOM Zukunftsforum Mönchengladbach für Umwelt, Wandel und Visionen" class="graded h-full w-full object-cover" loading="lazy">
       </div>
       <div>
         <p class="reveal mb-3 text-sm font-medium uppercase tracking-widest" style="color:var(--color-forest-mid)">Warum gerade er</p>
@@ -281,5 +310,6 @@
   <script src="assets/js/ScrollTrigger.min.js"></script>
   <script src="assets/js/lenis.min.js"></script>
   <script src="assets/js/main.js?v=1783363903"></script>
+  <script src="assets/js/enhance.js?v=1783363903"></script>
 </body>
 </html>
