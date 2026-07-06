@@ -44,9 +44,6 @@
       const inner = el.querySelector("img, picture");
       if (inner) inner.style.transform = "none";
     });
-    document.querySelectorAll(".growth-line path").forEach((p) => {
-      p.style.strokeDashoffset = "0";
-    });
     return; // keine Bewegungs-Effekte
   }
 
@@ -165,24 +162,6 @@
       tl.to(el, { clipPath: "inset(0 0 0% 0)", duration: 0.9, ease: "expo.out" }, 0);
       if (inner) tl.to(inner, { scale: 1, duration: 1.2, ease: "expo.out" }, 0);
     });
-
-    // A1: Die wachsende Linie — SVG ueber volle Dokumenthoehe spannen
-    const lineSvg = document.querySelector(".growth-line");
-    const line = document.querySelector(".growth-line path");
-    if (line && lineSvg) {
-      const sizeSvg = () => {
-        lineSvg.style.height = document.documentElement.scrollHeight + "px";
-      };
-      sizeSvg();
-      const len = line.getTotalLength();
-      line.style.strokeDasharray = len;
-      line.style.strokeDashoffset = len;
-      gsap.to(line, {
-        strokeDashoffset: 0, ease: "none",
-        scrollTrigger: { trigger: document.body, start: "top top", end: "bottom bottom", scrub: 0.8 },
-      });
-      ScrollTrigger.addEventListener("refreshInit", sizeSvg);
-    }
 
     // (Counter werden von main.js / subpage.js gehandhabt)
   }

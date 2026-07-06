@@ -320,24 +320,6 @@
   .skewable { will-change: transform; }
   .magnetic { will-change: transform; }
 
-  /* --- A1: Die wachsende Linie --- */
-  .growth-line {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    pointer-events: none;
-    overflow: visible;
-  }
-  .growth-line path {
-    fill: none;
-    stroke: var(--color-forest-mid);
-    stroke-width: 1.2;
-    stroke-linecap: round;
-    opacity: 0.38;
-  }
-
   /* --- C3: Preloader --- */
   .preloader {
     position: fixed; inset: 0; z-index: 10000;
