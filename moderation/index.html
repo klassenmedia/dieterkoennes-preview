@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/main.css?v=1783363903">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,59 +39,61 @@
   <nav id="nav" class="site-nav nav-scrolled">
     <div class="mx-auto flex w-full max-w-6xl items-center justify-between">
       <a href="../" class="font-display text-lg font-bold text-paper">Dieter <span class="text-forest-light">Könnes</span></a>
-      <a href="../kontakt/" class="btn-primary !px-5 !py-2.5 !text-sm">Anfragen</a>
+      <div class="flex items-center gap-6">
+        <a href="../" class="hidden text-sm text-white/70 hover:text-white sm:block">← Startseite</a>
+        <a href="../kontakt/" class="btn-primary !px-5 !py-2.5 !text-sm">Anfragen</a>
+      </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="relative flex min-h-[70svh] items-center overflow-hidden px-6 pt-24">
-    <img src="../assets/img/bloom-stage-1920.webp" alt="Dieter Könnes als Nachhaltigkeits-Moderator live beim BLOOM Zukunftsforum Mönchengladbach" class="absolute inset-0 -z-10 h-full w-full object-cover">
-    <div class="absolute inset-0 -z-0" style="background:linear-gradient(to right, rgba(14,17,11,0.92) 0%, rgba(14,17,11,0.7) 55%, rgba(14,17,11,0.4) 100%);"></div>
-    <div class="relative z-10 mx-auto w-full max-w-6xl">
-      <p class="mb-4 text-sm font-medium uppercase tracking-widest text-forest-light">Leistung · Moderation</p>
-      <h1 class="mb-6 max-w-3xl font-display font-bold" style="font-size:clamp(2.2rem,5vw,4rem)">Nachhaltigkeits-Moderator für NRW &amp; deutschlandweit</h1>
-      <p class="max-w-2xl text-lg leading-relaxed text-white/85">
-        Dieter Könnes moderiert Zukunftsforen, CSR-Kongresse, Energie-Podien und Fachtagungen rund um Nachhaltigkeit und Transformation — TV-erfahren, souverän und mit gelebtem Themenverständnis. Anfragen werden meist innerhalb von 24 Stunden beantwortet.
+  <header class="subhero">
+    <img src="../assets/img/bloom-stage-1920.webp" alt="Dieter Könnes als Nachhaltigkeits-Moderator live beim BLOOM Zukunftsforum Mönchengladbach" class="subhero-bg object-[center_30%]">
+    <div class="subhero-scrim"></div>
+    <div class="relative z-10 mx-auto w-full max-w-6xl px-6 pb-16 pt-32">
+      <p class="hero-fade eyebrow mb-5 text-forest-light">Leistung · Moderation</p>
+      <h1 class="hero-fade subhero-h1 mb-6 max-w-3xl">Nachhaltigkeits-Moderator<br>für NRW &amp; deutschlandweit</h1>
+      <p class="hero-fade mb-8 max-w-2xl text-lg leading-relaxed text-white/80">
+        Zukunftsforen, CSR-Kongresse, Energie-Podien und Fachtagungen — TV-erfahren, souverän und mit gelebtem Themenverständnis.
       </p>
-      <div class="mt-8"><a href="../kontakt/" class="btn-primary">Moderation anfragen</a></div>
+      <a href="../kontakt/" class="hero-fade btn-primary">Moderation anfragen</a>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="px-6 py-24" style="background:#f5f3ee; color:var(--color-ink)">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="reveal eyebrow mb-4" style="color:var(--color-forest-mid)">Ihre Bühne, sicher geführt</p>
+      <h2 class="reveal mb-6" style="font-size:clamp(1.8rem,3.5vw,2.6rem)">Souveränität aus 25 Jahren Live-TV — auf Ihrer Veranstaltung.</h2>
+      <p class="reveal text-lg leading-relaxed" style="color:var(--color-slate)">
+        Dieter Könnes moderiert Nachhaltigkeitsthemen glaubwürdig, weil er sie selbst lebt. Anfragen werden meist innerhalb von 24 Stunden beantwortet.
+      </p>
     </div>
   </section>
 
-  <!-- NUTZEN -->
-  <section class="px-6 py-24" style="background:#f5f3ee; color:var(--color-ink)">
+  <!-- WOFÜR -->
+  <section class="px-6 pb-24" style="background:#f5f3ee; color:var(--color-ink)">
     <div class="mx-auto max-w-5xl">
-      <h2 class="mb-12" style="font-size:var(--text-display)">Wofür Sie ihn buchen können</h2>
       <div class="grid gap-6 md:grid-cols-2">
-        <div class="rounded-2xl border border-fog bg-white p-7">
-          <h3 class="mb-2 text-xl">Zukunftsforen &amp; Kongresse</h3>
-          <p class="leading-relaxed" style="color:var(--color-slate)">Nachhaltigkeitskongresse, Zukunftsforen und Fachtagungen — strukturiert geführt, mit dem richtigen Gespür für Tempo und Tiefe.</p>
-        </div>
-        <div class="rounded-2xl border border-fog bg-white p-7">
-          <h3 class="mb-2 text-xl">Podiumsdiskussionen</h3>
-          <p class="leading-relaxed" style="color:var(--color-slate)">Klima, CSR, Energiewende, Transformation — er stellt die echten Fragen und hält kontroverse Runden souverän zusammen.</p>
-        </div>
-        <div class="rounded-2xl border border-fog bg-white p-7">
-          <h3 class="mb-2 text-xl">Preisverleihungen &amp; Galas</h3>
-          <p class="leading-relaxed" style="color:var(--color-slate)">Nachhaltigkeitspreise, Awards und festliche Abende — charmant, sicher, mit dem Timing aus 25 Jahren Live-TV.</p>
-        </div>
-        <div class="rounded-2xl border border-fog bg-white p-7">
-          <h3 class="mb-2 text-xl">Hybrid &amp; Online</h3>
-          <p class="leading-relaxed" style="color:var(--color-slate)">Als Live-TV-Profi im Umgang mit Kamera, Ton und digitalem Publikum erfahren — auch rein digitale Formate laufen sicher.</p>
-        </div>
+        <div class="feature-card reveal"><h3 class="mb-2 text-xl">Zukunftsforen &amp; Kongresse</h3><p class="leading-relaxed" style="color:var(--color-slate)">Nachhaltigkeitskongresse, Zukunftsforen und Fachtagungen — strukturiert geführt, mit dem richtigen Gespür für Tempo und Tiefe.</p></div>
+        <div class="feature-card reveal"><h3 class="mb-2 text-xl">Podiumsdiskussionen</h3><p class="leading-relaxed" style="color:var(--color-slate)">Klima, CSR, Energiewende, Transformation — er stellt die echten Fragen und hält kontroverse Runden souverän zusammen.</p></div>
+        <div class="feature-card reveal"><h3 class="mb-2 text-xl">Preisverleihungen &amp; Galas</h3><p class="leading-relaxed" style="color:var(--color-slate)">Nachhaltigkeitspreise, Awards und festliche Abende — charmant, sicher, mit dem Timing aus 25 Jahren Live-TV.</p></div>
+        <div class="feature-card reveal"><h3 class="mb-2 text-xl">Hybrid &amp; Online</h3><p class="leading-relaxed" style="color:var(--color-slate)">Als Live-TV-Profi im Umgang mit Kamera, Ton und digitalem Publikum erfahren — auch rein digitale Formate laufen sicher.</p></div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="px-6 py-24 bg-ink">
+  <section class="bg-ink px-6 py-24">
     <div class="mx-auto max-w-3xl">
-      <h2 class="mb-10 text-center" style="font-size:var(--text-display)">Häufige Fragen</h2>
+      <p class="reveal eyebrow mb-3 text-center text-forest-mid">Häufige Fragen</p>
+      <h2 class="reveal mb-10 text-center" style="font-size:clamp(1.8rem,3.5vw,2.6rem)">Gut zu wissen</h2>
       <div class="space-y-3">
-        <details class="rounded-2xl border border-line bg-ink-card p-6"><summary class="cursor-pointer list-none font-display text-lg font-medium">Welche Nachhaltigkeits-Events moderiert Dieter Könnes?</summary><p class="mt-4 leading-relaxed text-white/70">Zukunftsforen, CSR- und Nachhaltigkeitskongresse, Energie- und Klima-Podien, Fachtagungen sowie Preisverleihungen mit Nachhaltigkeitsbezug — in NRW und deutschlandweit, auch hybrid oder online.</p></details>
-        <details class="rounded-2xl border border-line bg-ink-card p-6"><summary class="cursor-pointer list-none font-display text-lg font-medium">Was unterscheidet ihn von anderen Eventmoderatoren?</summary><p class="mt-4 leading-relaxed text-white/70">Als Gründer der ROBIN GUT Stiftung lebt er Nachhaltigkeit selbst. Kombiniert mit 25 Jahren Live-TV-Erfahrung moderiert er Podien souverän und thematisch glaubwürdig.</p></details>
-        <details class="rounded-2xl border border-line bg-ink-card p-6"><summary class="cursor-pointer list-none font-display text-lg font-medium">In welchen Regionen ist er buchbar?</summary><p class="mt-4 leading-relaxed text-white/70">Heimbereich NRW — Düsseldorf, Köln, Dortmund, Ruhrgebiet, Niederrhein. Deutschlandweit auf Anfrage.</p></details>
+        <details class="reveal rounded-2xl border border-line bg-ink-card p-6"><summary class="cursor-pointer list-none font-display text-lg font-medium">Welche Nachhaltigkeits-Events moderiert Dieter Könnes?</summary><p class="mt-4 leading-relaxed text-white/70">Zukunftsforen, CSR- und Nachhaltigkeitskongresse, Energie- und Klima-Podien, Fachtagungen sowie Preisverleihungen mit Nachhaltigkeitsbezug — in NRW und deutschlandweit, auch hybrid oder online.</p></details>
+        <details class="reveal rounded-2xl border border-line bg-ink-card p-6"><summary class="cursor-pointer list-none font-display text-lg font-medium">Was unterscheidet ihn von anderen Eventmoderatoren?</summary><p class="mt-4 leading-relaxed text-white/70">Als Gründer der ROBIN GUT Stiftung lebt er Nachhaltigkeit selbst. Kombiniert mit 25 Jahren Live-TV-Erfahrung moderiert er Podien souverän und thematisch glaubwürdig.</p></details>
+        <details class="reveal rounded-2xl border border-line bg-ink-card p-6"><summary class="cursor-pointer list-none font-display text-lg font-medium">In welchen Regionen ist er buchbar?</summary><p class="mt-4 leading-relaxed text-white/70">Heimbereich NRW — Düsseldorf, Köln, Dortmund, Ruhrgebiet, Niederrhein. Deutschlandweit auf Anfrage.</p></details>
       </div>
-      <div class="mt-14 rounded-3xl bg-gradient-to-br from-forest to-forest-mid p-10 text-center">
+      <div class="reveal mt-14 rounded-3xl bg-gradient-to-br from-forest to-forest-mid p-10 text-center">
         <h2 class="mb-4" style="font-size:clamp(1.6rem,3.5vw,2.4rem)">Ihr Event, souverän moderiert.</h2>
         <a href="../kontakt/" class="btn-primary !bg-white !text-forest">Moderation anfragen</a>
       </div>
@@ -101,5 +103,10 @@
   <footer class="bg-ink px-6 py-10 text-center text-sm text-white/40">
     <p><a href="../" class="hover:text-white">← Startseite</a> · <a href="../impressum/" class="hover:text-white">Impressum</a> · <a href="../datenschutz/" class="hover:text-white">Datenschutz</a></p>
   </footer>
+
+  <script src="../assets/js/gsap.min.js"></script>
+  <script src="../assets/js/ScrollTrigger.min.js"></script>
+  <script src="../assets/js/lenis.min.js"></script>
+  <script src="../assets/js/subpage.js?v=1783363903"></script>
 </body>
 </html>

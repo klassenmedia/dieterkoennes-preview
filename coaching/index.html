@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/main.css?v=1783363903">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,43 +39,60 @@
   <nav id="nav" class="site-nav nav-scrolled">
     <div class="mx-auto flex w-full max-w-6xl items-center justify-between">
       <a href="../" class="font-display text-lg font-bold text-paper">Dieter <span class="text-forest-light">Könnes</span></a>
-      <a href="../kontakt/" class="btn-primary !px-5 !py-2.5 !text-sm">Anfragen</a>
+      <div class="flex items-center gap-6">
+        <a href="../" class="hidden text-sm text-white/70 hover:text-white sm:block">← Startseite</a>
+        <a href="../kontakt/" class="btn-primary !px-5 !py-2.5 !text-sm">Anfragen</a>
+      </div>
     </div>
   </nav>
 
-  <section class="relative flex min-h-[70svh] items-center overflow-hidden px-6 pt-24">
-    <img src="../assets/img/tv-studio-1920.webp" alt="Dieter Könnes, Medientrainer und Kommunikations-Coach mit TV-Erfahrung" class="absolute inset-0 -z-10 h-full w-full object-cover">
-    <div class="absolute inset-0 -z-0" style="background:linear-gradient(to right, rgba(14,17,11,0.94) 0%, rgba(14,17,11,0.75) 55%, rgba(14,17,11,0.45) 100%);"></div>
-    <div class="relative z-10 mx-auto w-full max-w-6xl">
-      <p class="mb-4 text-sm font-medium uppercase tracking-widest text-forest-light">Leistung · Coaching</p>
-      <h1 class="mb-6 max-w-3xl font-display font-bold" style="font-size:clamp(2.2rem,5vw,4rem)">Medientraining &amp; Kommunikations-Coaching</h1>
-      <p class="max-w-2xl text-lg leading-relaxed text-white/85">
-        Dieter Könnes trainiert Führungskräfte für überzeugende Auftritte vor Kamera, Mikrofon und Publikum — Medientraining, Krisenkommunikation und die Kunst, auf den Punkt zu kommen. Aus 25 Jahren Live-TV, praxisnah statt theoretisch. Anfrage meist innerhalb von 24 Stunden beantwortet.
+  <!-- HERO -->
+  <header class="subhero">
+    <img src="../assets/img/tv-studio-1920.webp" alt="Dieter Könnes, Medientrainer und Kommunikations-Coach mit TV-Erfahrung" class="subhero-bg object-[center_30%]">
+    <div class="subhero-scrim"></div>
+    <div class="relative z-10 mx-auto w-full max-w-6xl px-6 pb-16 pt-32">
+      <p class="hero-fade eyebrow mb-5 text-forest-light">Leistung · Coaching</p>
+      <h1 class="hero-fade subhero-h1 mb-6 max-w-3xl">Medientraining &amp;<br>Kommunikations-Coaching</h1>
+      <p class="hero-fade mb-8 max-w-2xl text-lg leading-relaxed text-white/80">
+        Überzeugende Auftritte vor Kamera, Mikrofon und Publikum — Medientraining, Krisenkommunikation und die Kunst, auf den Punkt zu kommen.
       </p>
-      <div class="mt-8"><a href="../kontakt/" class="btn-primary">Coaching anfragen</a></div>
+      <a href="../kontakt/" class="hero-fade btn-primary">Coaching anfragen</a>
     </div>
-  </section>
+  </header>
 
+  <!-- INTRO -->
   <section class="px-6 py-24" style="background:#f5f3ee; color:var(--color-ink)">
-    <div class="mx-auto max-w-4xl">
-      <h2 class="mb-6" style="font-size:var(--text-display)">Woran wir arbeiten</h2>
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="reveal eyebrow mb-4" style="color:var(--color-forest-mid)">Aus der Praxis</p>
+      <h2 class="reveal mb-6" style="font-size:clamp(1.8rem,3.5vw,2.6rem)">25 Jahre vor der Kamera — als Training für Sie.</h2>
+      <p class="reveal text-lg leading-relaxed" style="color:var(--color-slate)">
+        Dieter Könnes trainiert Führungskräfte praxisnah statt theoretisch. Anfragen werden meist innerhalb von 24 Stunden beantwortet.
+      </p>
+    </div>
+  </section>
+
+  <!-- WORAN -->
+  <section class="px-6 pb-24" style="background:#f5f3ee; color:var(--color-ink)">
+    <div class="mx-auto max-w-5xl">
       <div class="grid gap-6 md:grid-cols-3">
-        <div class="rounded-2xl border border-fog bg-white p-7"><h3 class="mb-2 text-lg">Auftritt vor Kamera</h3><p class="text-sm leading-relaxed" style="color:var(--color-slate)">Souverän ins Bild: Haltung, Blick, Stimme — damit Interviews und Statements sitzen.</p></div>
-        <div class="rounded-2xl border border-fog bg-white p-7"><h3 class="mb-2 text-lg">Krisenkommunikation</h3><p class="text-sm leading-relaxed" style="color:var(--color-slate)">Ruhig bleiben, wenn es heikel wird — vorbereitet auf schwierige Fragen und kritische Situationen.</p></div>
-        <div class="rounded-2xl border border-fog bg-white p-7"><h3 class="mb-2 text-lg">Auf den Punkt</h3><p class="text-sm leading-relaxed" style="color:var(--color-slate)">Botschaften klar formulieren — verständlich, prägnant, überzeugend vor jedem Publikum.</p></div>
+        <div class="feature-card reveal"><span class="eyebrow mb-3 block" style="color:var(--color-forest-mid)">01</span><h3 class="mb-2 text-lg">Auftritt vor Kamera</h3><p class="text-sm leading-relaxed" style="color:var(--color-slate)">Souverän ins Bild: Haltung, Blick, Stimme — damit Interviews und Statements sitzen.</p></div>
+        <div class="feature-card reveal"><span class="eyebrow mb-3 block" style="color:var(--color-forest-mid)">02</span><h3 class="mb-2 text-lg">Krisenkommunikation</h3><p class="text-sm leading-relaxed" style="color:var(--color-slate)">Ruhig bleiben, wenn es heikel wird — vorbereitet auf schwierige Fragen und kritische Situationen.</p></div>
+        <div class="feature-card reveal"><span class="eyebrow mb-3 block" style="color:var(--color-forest-mid)">03</span><h3 class="mb-2 text-lg">Auf den Punkt</h3><p class="text-sm leading-relaxed" style="color:var(--color-slate)">Botschaften klar formulieren — verständlich, prägnant, überzeugend vor jedem Publikum.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="px-6 py-24 bg-ink">
+  <!-- FAQ -->
+  <section class="bg-ink px-6 py-24">
     <div class="mx-auto max-w-3xl">
-      <h2 class="mb-10 text-center" style="font-size:var(--text-display)">Häufige Fragen</h2>
+      <p class="reveal eyebrow mb-3 text-center text-forest-mid">Häufige Fragen</p>
+      <h2 class="reveal mb-10 text-center" style="font-size:clamp(1.8rem,3.5vw,2.6rem)">Gut zu wissen</h2>
       <div class="space-y-3">
-        <details class="rounded-2xl border border-line bg-ink-card p-6"><summary class="cursor-pointer list-none font-display text-lg font-medium">Für wen ist das Coaching gedacht?</summary><p class="mt-4 leading-relaxed text-white/70">Für Führungskräfte, Sprecher und Teams, die vor Kamera, Mikrofon und Publikum überzeugender wirken wollen — inklusive Medien- und Krisenkommunikation.</p></details>
-        <details class="rounded-2xl border border-line bg-ink-card p-6"><summary class="cursor-pointer list-none font-display text-lg font-medium">Einzeln oder in der Gruppe?</summary><p class="mt-4 leading-relaxed text-white/70">Beides möglich: intensives Einzelcoaching oder Team-Workshops, je nach Ziel und Anlass.</p></details>
-        <details class="rounded-2xl border border-line bg-ink-card p-6"><summary class="cursor-pointer list-none font-display text-lg font-medium">Wo findet das Coaching statt?</summary><p class="mt-4 leading-relaxed text-white/70">In NRW vor Ort, deutschlandweit auf Anfrage — und als Online-Format.</p></details>
+        <details class="reveal rounded-2xl border border-line bg-ink-card p-6"><summary class="cursor-pointer list-none font-display text-lg font-medium">Für wen ist das Coaching gedacht?</summary><p class="mt-4 leading-relaxed text-white/70">Für Führungskräfte, Sprecher und Teams, die vor Kamera, Mikrofon und Publikum überzeugender wirken wollen — inklusive Medien- und Krisenkommunikation.</p></details>
+        <details class="reveal rounded-2xl border border-line bg-ink-card p-6"><summary class="cursor-pointer list-none font-display text-lg font-medium">Einzeln oder in der Gruppe?</summary><p class="mt-4 leading-relaxed text-white/70">Beides möglich: intensives Einzelcoaching oder Team-Workshops, je nach Ziel und Anlass.</p></details>
+        <details class="reveal rounded-2xl border border-line bg-ink-card p-6"><summary class="cursor-pointer list-none font-display text-lg font-medium">Wo findet das Coaching statt?</summary><p class="mt-4 leading-relaxed text-white/70">In NRW vor Ort, deutschlandweit auf Anfrage — und als Online-Format.</p></details>
       </div>
-      <div class="mt-14 rounded-3xl bg-gradient-to-br from-forest to-forest-mid p-10 text-center">
+      <div class="reveal mt-14 rounded-3xl bg-gradient-to-br from-forest to-forest-mid p-10 text-center">
         <h2 class="mb-4" style="font-size:clamp(1.6rem,3.5vw,2.4rem)">Überzeugen, wenn es zählt.</h2>
         <a href="../kontakt/" class="btn-primary !bg-white !text-forest">Coaching anfragen</a>
       </div>
@@ -85,5 +102,10 @@
   <footer class="bg-ink px-6 py-10 text-center text-sm text-white/40">
     <p><a href="../" class="hover:text-white">← Startseite</a> · <a href="../impressum/" class="hover:text-white">Impressum</a> · <a href="../datenschutz/" class="hover:text-white">Datenschutz</a></p>
   </footer>
+
+  <script src="../assets/js/gsap.min.js"></script>
+  <script src="../assets/js/ScrollTrigger.min.js"></script>
+  <script src="../assets/js/lenis.min.js"></script>
+  <script src="../assets/js/subpage.js?v=1783363903"></script>
 </body>
 </html>

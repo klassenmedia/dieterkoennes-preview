@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/main.css?v=1783363903">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,43 +30,58 @@
   <nav id="nav" class="site-nav nav-scrolled">
     <div class="mx-auto flex w-full max-w-6xl items-center justify-between">
       <a href="../" class="font-display text-lg font-bold text-paper">Dieter <span class="text-forest-light">Könnes</span></a>
-      <a href="../kontakt/" class="btn-primary !px-5 !py-2.5 !text-sm">Anfragen</a>
+      <div class="flex items-center gap-6">
+        <a href="../" class="hidden text-sm text-white/70 hover:text-white sm:block">← Startseite</a>
+        <a href="../kontakt/" class="btn-primary !px-5 !py-2.5 !text-sm">Anfragen</a>
+      </div>
     </div>
   </nav>
 
-  <section class="relative flex min-h-[70svh] items-center overflow-hidden px-6 pt-24">
-    <img src="../assets/img/wald-luft-1920.webp" alt="Mischwald in NRW — ROBIN GUT Stiftung, Projekt NRW pflanzt" class="absolute inset-0 -z-10 h-full w-full object-cover">
-    <div class="absolute inset-0 -z-0" style="background:linear-gradient(to right, rgba(20,50,25,0.9) 0%, rgba(20,50,25,0.65) 55%, rgba(20,50,25,0.35) 100%);"></div>
-    <div class="relative z-10 mx-auto w-full max-w-6xl">
-      <p class="mb-4 text-sm font-medium uppercase tracking-widest text-forest-light">Die Stiftung</p>
-      <h1 class="mb-6 max-w-3xl font-display font-bold" style="font-size:clamp(2.2rem,5vw,4rem)">ROBIN GUT: 1 Million Bäume für NRW</h1>
-      <p class="max-w-2xl text-lg leading-relaxed text-white/90">
-        Die ROBIN GUT Stiftung wurde 2025 von Dieter Könnes gegründet. Ihr Kernprojekt NRW pflanzt hat ein klares Ziel: eine Million Bäume für Nordrhein-Westfalen — unter der Schirmherrschaft von Ministerpräsident Hendrik Wüst. Über 20.000 Bäume sind bereits gepflanzt, gemeinsam mit Schulen, Kommunen und Unternehmen.
+  <!-- HERO -->
+  <header class="subhero">
+    <img src="../assets/img/wald-luft-1920.webp" alt="Mischwald in NRW — ROBIN GUT Stiftung, Projekt NRW pflanzt" class="subhero-bg object-[center_40%]">
+    <div class="subhero-scrim"></div>
+    <div class="relative z-10 mx-auto w-full max-w-6xl px-6 pb-16 pt-32">
+      <p class="hero-fade eyebrow mb-5 text-forest-light">Die Stiftung</p>
+      <h1 class="hero-fade subhero-h1 mb-6 max-w-3xl">ROBIN GUT:<br>1 Million Bäume für NRW</h1>
+      <p class="hero-fade mb-8 max-w-2xl text-lg leading-relaxed text-white/85">
+        2025 von Dieter Könnes gegründet. Kernprojekt „NRW pflanzt" — unter der Schirmherrschaft von Ministerpräsident Hendrik Wüst. Über 20.000 Bäume sind bereits gepflanzt.
       </p>
-      <div class="mt-8 flex flex-wrap gap-4">
+      <div class="hero-fade flex flex-wrap gap-4">
         <a href="https://robin-gut.org" target="_blank" rel="noopener noreferrer" class="btn-primary">Zur Stiftung robin-gut.org</a>
         <a href="../kontakt/" class="btn-ghost">Event mit Wirkung anfragen</a>
       </div>
     </div>
-  </section>
+  </header>
 
+  <!-- ZAHLEN -->
   <section class="px-6 py-24" style="background:var(--color-forest-light); color:var(--color-ink)">
     <div class="mx-auto max-w-5xl">
       <div class="grid gap-8 text-center sm:grid-cols-3">
-        <div><div class="font-display text-5xl font-bold" style="color:var(--color-forest-mid)">20.000+</div><p class="mt-2 text-sm" style="color:var(--color-slate)">Bäume bereits gepflanzt</p></div>
-        <div><div class="font-display text-5xl font-bold" style="color:var(--color-forest-mid)">1 Mio</div><p class="mt-2 text-sm" style="color:var(--color-slate)">Bäume als Ziel</p></div>
-        <div><div class="font-display text-5xl font-bold" style="color:var(--color-forest-mid)">Wüst</div><p class="mt-2 text-sm" style="color:var(--color-slate)">Schirmherr Ministerpräsident NRW</p></div>
+        <div class="reveal"><div class="font-display text-5xl font-bold" style="color:var(--color-forest-mid)" data-count="20000" data-suffix="+">0</div><p class="mt-2 text-sm" style="color:var(--color-slate)">Bäume bereits gepflanzt</p></div>
+        <div class="reveal"><div class="font-display text-5xl font-bold" style="color:var(--color-forest-mid)">1 Mio</div><p class="mt-2 text-sm" style="color:var(--color-slate)">Bäume als Ziel</p></div>
+        <div class="reveal"><div class="font-display text-5xl font-bold" style="color:var(--color-forest-mid)">Wüst</div><p class="mt-2 text-sm" style="color:var(--color-slate)">Schirmherr Ministerpräsident NRW</p></div>
       </div>
-      <div class="mx-auto mt-16 max-w-3xl text-center">
-        <h2 class="mb-4" style="font-size:var(--text-display)">Ihre Veranstaltung pflanzt Bäume</h2>
-        <p class="text-lg leading-relaxed" style="color:var(--color-slate)">Ein Angebot, das in Deutschland nur er machen kann: Wer Dieter Könnes bucht, unterstützt direkt NRW pflanzt. Ihr Event wird Teil eines echten Waldes — messbar, sichtbar, mit Zertifikat.</p>
-        <div class="mt-8"><a href="../kontakt/" class="btn-primary">Jetzt anfragen</a></div>
-      </div>
+    </div>
+  </section>
+
+  <!-- OFFER -->
+  <section class="bg-ink px-6 py-24">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="reveal eyebrow mb-3 text-forest-mid">Das Besondere</p>
+      <h2 class="reveal mb-6" style="font-size:clamp(1.8rem,3.5vw,2.6rem)">Ihre Veranstaltung pflanzt Bäume</h2>
+      <p class="reveal mb-8 text-lg leading-relaxed text-white/75">Ein Angebot, das in Deutschland nur er machen kann: Wer Dieter Könnes bucht, unterstützt direkt NRW pflanzt. Ihr Event wird Teil eines echten Waldes — messbar, sichtbar, mit Zertifikat.</p>
+      <a href="../kontakt/" class="reveal btn-primary">Jetzt anfragen</a>
     </div>
   </section>
 
   <footer class="bg-ink px-6 py-10 text-center text-sm text-white/40">
     <p><a href="../" class="hover:text-white">← Startseite</a> · <a href="../impressum/" class="hover:text-white">Impressum</a> · <a href="../datenschutz/" class="hover:text-white">Datenschutz</a></p>
   </footer>
+
+  <script src="../assets/js/gsap.min.js"></script>
+  <script src="../assets/js/ScrollTrigger.min.js"></script>
+  <script src="../assets/js/lenis.min.js"></script>
+  <script src="../assets/js/subpage.js?v=1783363903"></script>
 </body>
 </html>

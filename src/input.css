@@ -192,6 +192,58 @@
     inset: -8% 0;
     will-change: transform;
   }
+
+  /* ===== Unterseiten-Hero ===== */
+  .subhero {
+    position: relative;
+    overflow: hidden;
+    min-height: 78svh;
+    display: flex;
+    align-items: flex-end;
+  }
+  .subhero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    will-change: transform;
+  }
+  .subhero-scrim {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to top, rgba(14,14,16,0.97) 0%, rgba(14,14,16,0.6) 42%, rgba(14,14,16,0.3) 100%),
+      linear-gradient(to right, rgba(14,14,16,0.75) 0%, rgba(14,14,16,0.15) 55%, rgba(14,14,16,0) 80%);
+  }
+  .subhero-h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+    font-size: clamp(2rem, 4.2vw, 3.4rem);
+  }
+
+  /* Section-Eyebrow (Rhythmus wie Startseite) */
+  .eyebrow {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+  }
+
+  /* Helle Feature-Card */
+  .feature-card {
+    border-radius: 18px;
+    border: 1px solid var(--color-fog);
+    background: #fff;
+    padding: 1.75rem;
+    transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s var(--ease-out-expo);
+  }
+  .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 48px -24px rgba(20,50,25,0.25);
+  }
 }
 
 /* ============================================================

@@ -94,7 +94,11 @@ Design-Tokens in `@theme`: `--color-brand: #f76625; --color-brand-dark: #c44e17;
 
 **Verifikation:** Preview im Browser — alle 8 Kapitel scrollen flüssig, Pin-Sections springen nicht (`markers: true` beim Entwickeln, danach entfernen), `prefers-reduced-motion: reduce` → alle Tweens via `gsap.matchMedia()` deaktiviert, Inhalt voll sichtbar.
 
-## Phase 4 — Unterseiten (Landingpages)
+## Phase 4 — Unterseiten (Landingpages) — FERTIG & live (06.07.)
+
+> Alle 7 Unterseiten gebaut, verifiziert, deployed: /moderation/, /keynote/, /coaching/, /robin-gut/, /kontakt/ (echtes Formular mit Honeypot + send.php-action), /impressum/, /datenschutz/. Answer-First-Copy, eigene Service+FAQPage-Schemas, Buchungs-CTAs, noindex. Format-Cards der Startseite verlinkt. Live: https://klassenmedia.github.io/dieterkoennes-preview/ | OFFEN: send.php-Backend (braucht ALL-INKL/PHP, lokal nicht vorhanden), Impressum/Datenschutz nur Platzhalter (vor Livegang echte Fassung), Fonts lokal einbinden (DSGVO).
+
+### Alte Phase-4-Notiz (Referenz):
 
 Gemeinsames Muster: Answer-First-Absatz direkt unter H1 (zitierfähig für LLMs), dann Nutzen-Sektion, Bild, 3–4 seiten-spezifische FAQs, CTA. Nur leichte Reveals — kein Pinning (schnell + fokussiert auf Conversion).
 
