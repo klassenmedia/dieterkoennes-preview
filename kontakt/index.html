@@ -4,23 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>Anfrage — Dieter Könnes | Nachhaltigkeitsmoderator &amp; Speaker</title>
+  <title>Anfrage &amp; Buchung — Dieter Könnes | Nachhaltigkeitsmoderator &amp; Speaker</title>
+  <meta name="description" content="Dieter Könnes als Nachhaltigkeitsmoderator oder Keynote-Speaker anfragen. Kurzes Formular ausfüllen — Antwort meist innerhalb von 24 Stunden.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body class="bg-ink text-paper">
-  <section class="flex min-h-svh items-center justify-center px-6 text-center">
-    <div class="mx-auto max-w-xl">
-      <span class="mb-6 inline-flex items-center gap-2 rounded-full border border-forest-mid/50 bg-forest/40 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-forest-light">
-        <span class="badge-dot"></span> Kontakt &amp; Buchung
-      </span>
-      <h1 class="mb-5 font-display font-bold" style="font-size:clamp(2rem,5vw,3.2rem)">Bereit für ein Event mit Wirkung?</h1>
-      <p class="mb-8 text-lg text-white/70">Das vollständige Anfrageformular folgt in Kürze. Bis dahin erreichen Sie Dieter Könnes direkt per E-Mail — Antwort meist innerhalb von 24 Stunden.</p>
-      <a href="mailto:info@dieter-koennes.de" class="btn-primary">info@dieter-koennes.de</a>
-      <p class="mt-10"><a href="../" class="text-sm text-white/50 hover:text-white">← Zurück zur Startseite</a></p>
+  <nav id="nav" class="site-nav nav-scrolled">
+    <div class="mx-auto flex w-full max-w-6xl items-center justify-between">
+      <a href="../" class="font-display text-lg font-bold text-paper">Dieter <span class="text-forest-light">Könnes</span></a>
+      <a href="../" class="text-sm text-white/70 hover:text-white">← Startseite</a>
+    </div>
+  </nav>
+
+  <section class="px-6 pb-24 pt-32">
+    <div class="mx-auto max-w-2xl">
+      <p class="mb-3 text-sm font-medium uppercase tracking-widest text-forest-mid">Kontakt &amp; Buchung</p>
+      <h1 class="mb-4 font-display font-bold" style="font-size:clamp(2rem,5vw,3.2rem)">Ihre Anfrage.</h1>
+      <p class="mb-10 text-lg text-white/70">Kurz ausfüllen — Dieter meldet sich persönlich, meist innerhalb von 24 Stunden.</p>
+
+      <!-- Formular: action wird beim ALL-INKL-Deploy auf send.php gesetzt -->
+      <form action="send.php" method="post" class="space-y-5">
+        <!-- Honeypot gegen Bots -->
+        <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+
+        <div class="grid gap-5 sm:grid-cols-2">
+          <div>
+            <label class="mb-1.5 block text-sm text-white/70" for="name">Name *</label>
+            <input id="name" name="name" required class="w-full rounded-xl border border-line bg-ink-card px-4 py-3 text-white outline-none focus:border-forest-mid">
+          </div>
+          <div>
+            <label class="mb-1.5 block text-sm text-white/70" for="email">E-Mail *</label>
+            <input id="email" name="email" type="email" required class="w-full rounded-xl border border-line bg-ink-card px-4 py-3 text-white outline-none focus:border-forest-mid">
+          </div>
+        </div>
+
+        <div>
+          <label class="mb-1.5 block text-sm text-white/70" for="typ">Buchungstyp</label>
+          <select id="typ" name="typ" class="w-full rounded-xl border border-line bg-ink-card px-4 py-3 text-white outline-none focus:border-forest-mid">
+            <option>Nachhaltigkeits-Moderation</option>
+            <option>Keynote / Vortrag</option>
+            <option>Coaching / Medientraining</option>
+            <option>Sonstiges</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="mb-1.5 block text-sm text-white/70" for="nachricht">Ihre Veranstaltung</label>
+          <textarea id="nachricht" name="nachricht" rows="5" placeholder="Anlass, Datum, Ort, Rahmen …" class="w-full rounded-xl border border-line bg-ink-card px-4 py-3 text-white outline-none focus:border-forest-mid"></textarea>
+        </div>
+
+        <label class="flex items-start gap-3 text-sm text-white/60">
+          <input type="checkbox" name="dsgvo" required class="mt-1">
+          <span>Ich habe die <a href="../datenschutz/" class="text-forest-light underline">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *</span>
+        </label>
+
+        <button type="submit" class="btn-primary w-full justify-center">Anfrage senden</button>
+      </form>
+
+      <p class="mt-8 text-center text-sm text-white/50">Oder direkt: <a href="mailto:info@dieter-koennes.de" class="text-forest-light hover:underline">info@dieter-koennes.de</a></p>
     </div>
   </section>
+
+  <footer class="bg-ink px-6 py-10 text-center text-sm text-white/40">
+    <p><a href="../" class="hover:text-white">← Startseite</a> · <a href="../impressum/" class="hover:text-white">Impressum</a> · <a href="../datenschutz/" class="hover:text-white">Datenschutz</a></p>
+  </footer>
 </body>
 </html>
